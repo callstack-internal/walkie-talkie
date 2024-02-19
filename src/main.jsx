@@ -15,6 +15,8 @@ const router = createBrowserRouter([
     element: <MainScreen />,
   },
 ]);
+
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider>

@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Button } from "@chakra-ui/react";
 import { FaMicrophone } from 'react-icons/fa';
 
-function WalkieTalkieButton() {
+function WalkieTalkieButton({ onPress }) {
   const [isPressed, setIsPressed] = useState(false);
 
   const handleMouseDown = () => {
     setIsPressed(true);
+    onPress()
     // Add "on press" logic here,
   };
 
