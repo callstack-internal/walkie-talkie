@@ -8,7 +8,7 @@ export default function CameraView({ isPressed }) {
   useEffect(() => {
     if (isPressed) {
       navigator.mediaDevices
-        .getUserMedia({ video: { width: 250, height: 400 }, audio: true })
+        .getUserMedia({ video: { width: 200, height: 250 }, audio: true })
         .then((stream) => {
           const video = document.querySelector("video");
           video.srcObject = stream;
