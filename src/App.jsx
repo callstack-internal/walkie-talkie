@@ -1,8 +1,7 @@
-import "./App.css";
-import { Spinner } from "@chakra-ui/react";
+import Auth from "./screens/Auth";
 
 function App() {
-  return <Spinner />;
+  return <Auth />;
 }
 
 export default App;
