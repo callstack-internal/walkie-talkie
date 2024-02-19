@@ -1,0 +1,9 @@
+/* FILEPATH: /Users/zilvinasbartkus/Projects/hackathon/walkie-talkie/src/components/Username.module.css */
+
+.username {
+  background-color: 'green.500';
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
