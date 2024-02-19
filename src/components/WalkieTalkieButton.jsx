@@ -1,10 +1,8 @@
-import { useState } from "react";
 import { Button } from "@chakra-ui/react";
-import { FaMicrophone } from 'react-icons/fa';
+import { FaMicrophone } from "react-icons/fa";
+import PropTypes from "prop-types";
 
-function WalkieTalkieButton() {
-  const [isPressed, setIsPressed] = useState(false);
-
+function WalkieTalkieButton({ isPressed, setIsPressed }) {
   const handleMouseDown = () => {
     setIsPressed(true);
     // Add "on press" logic here,
@@ -40,5 +38,8 @@ function WalkieTalkieButton() {
     </Button>
   );
 }
-
+WalkieTalkieButton.propTypes = {
+  isPressed: PropTypes.bool.isRequired,
+  setIsPressed: PropTypes.func.isRequired,
+};
 export default WalkieTalkieButton;
