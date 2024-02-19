@@ -4,6 +4,7 @@ import { Container } from '@chakra-ui/react'
 
 const Username = (props) => {
   const { username, isTalking } = props;
+
   return (
     <Container
       className={styles.username}
